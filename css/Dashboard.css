@@ -1,0 +1,207 @@
+
+body{
+  margin: 0px; padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(212, 212, 212);
+  font-family:  Helvetica, sans-serif;
+  font-size: 17px;
+}
+/*header top and sidebar css*/
+.header{
+  width:100%;
+  background-color:#023047;
+  height: 125px;
+  position: absolute;
+  display: flex;
+}
+.logo{
+  width: 20%;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.logo img{
+  width: 50%;
+  margin-right: 30px;
+}
+.page-name{
+  margin-top: 10px;
+  margin-left: 5%;
+  color: white;
+  width: 80%;
+  font-size: larger;
+  font-size: 25px;
+}
+/* sidebar css*/
+.stack-header{
+  z-index: 4;
+  margin-top: 70px;
+  width: 20%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+.ava-name{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5%;
+}
+.ava-name .ava{
+  width: 20%;
+}
+.ava-name .ava img{
+  width: 100%;
+} 
+
+/*button di sidebar css*/
+button{
+  display: block;
+  padding-left: 10px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #3E718A;
+  border-radius: 5px;
+  border-style: none;
+  border-color: #3E718A;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+  width: 212px;
+  height: 42px;
+}
+.button-label-left {
+  text-align: left;
+}
+button:hover{
+  background-color: rgba(219, 150, 45, 0.882);
+}
+i{
+  padding-right: 10px
+}
+.dropdown a{
+  display: block;
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+  border-bottom: solid;
+  border-color: #c7c8c8a6;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 1px;
+  height: 30px;
+  width: 212px;
+}
+.dropdown{
+  display: none;
+  min-width: 212px;
+  overflow: auto;
+  transition: 3s;
+}
+.dropdown a:hover{
+  background-color: #dddddd7e;
+  transition: 0.2s;
+}
+.show{
+  display: block;
+}
+/*END OF header top and sidebar css*/
+
+/*CSS content 
+main = container main punya class ha */
+#main{
+  width: 75%;
+  height: 100vh;
+  margin-top: 15vh;
+  margin-right: 3.7vh;
+  height: auto;
+  position: relative;
+  float: right;
+  border-radius: 8px;
+}
+.top{
+  /*dari class ="ha top" jadi semacem inherit yang dari main*/
+  top: 0;
+  height: 130px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+}
+.data-top{
+  /*buat tempat icon dan des di konten atas*/
+  width: 40%;
+  margin: auto;
+  margin-left: 2%;
+  display: flex;
+
+}
+.middle{
+  height:120px;
+  top:50%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.con{
+  width: 30%;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.51);}
+.con img{
+  margin-top: 27%;
+  margin-left: 20%;
+}
+.con .icon{
+  width: 30%;
+}
+.con .icon-des{
+  margin-top: 8%;
+}
+.icon{
+  width: 20%;
+}
+.icon-des{
+  color: rgb(57, 57, 57);
+}
+span{
+  display: block;
+  padding: 7px;
+}
+.bottom{
+  top:50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+}
+.bot{
+  width: 100%;
+  display: flex;
+  padding:10px
+}
+.bot-pic{
+  width: 50%;
+  margin-left: 10%;
+}
+.bot-content{
+  font-size: xx-large;
+  margin-top:15%;
+}
+
+
+.tb-data{
+  background-color: rgb(255, 177, 61);
+}
+th,td{
+  padding: 20px;
+}

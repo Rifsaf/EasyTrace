@@ -1,0 +1,146 @@
+
+body{
+  margin: 0px; padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(212, 212, 212);
+  font-family:'Montserrat';
+}
+/*header top and sidebar css*/
+.header{
+  width:100%;
+  background-color:#023047;
+  height: 125px;
+  position: absolute;
+}
+.stack-header{
+  z-index: 4;
+  margin-top: 70px;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+  top: 0;
+  left: 0;
+}
+.ava-name{
+  display:flex;
+  justify-content:center ;
+  align-items: center;
+  padding-left: 10;
+  padding-right: 10px;
+}
+.name{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+/*Main content css*/
+#main{
+  width: 75%;
+  height: 100vh;
+  margin-top: 15vh;
+  margin-right: 3.7vh;
+  height: auto;
+  position: relative;
+  float: right;
+  border-radius: 8px;
+}
+.top{
+  top: 0;
+  height: 130px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+}
+th,td{
+  padding: 20px;
+}
+.tabel-top{
+  border: 1;
+}
+.middle{
+  height:120px;
+  top:50%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.con{
+  width: 30%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.51);}
+.con img{
+  margin-top: 9%;
+  margin-left: 7%;
+}
+
+.bottom{
+  top:50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+}
+.tb-data{
+  background-color: rgb(255, 177, 61);
+}
+
+
+/*button*/
+button{
+  display: block;
+  padding-left: 10px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #3E718A;
+  border-radius: 5px;
+  border-style: none;
+  border-color: #3E718A;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+  width: 212px;
+  height: 42px;
+}
+.button-label-left {
+  text-align: left;
+}
+button:hover{
+   background-color: #3e718aca;
+}
+i{
+  padding-right: 10px
+}
+.dropdown a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+  height: 30px;
+  width: 212px;
+  transition: 2.5s;
+}
+.dropdown{
+  display: none;
+  min-width: 212px;
+  overflow: auto;
+  transition: 10s;
+}
+.dropdown a:hover{
+  background-color: aliceblue;
+}
+.show{
+  display: block;
+  transition: 3s;
+}
+

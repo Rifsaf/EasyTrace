@@ -1,0 +1,12 @@
+.top form button{
+  margin: 0;
+  margin-left: 85%;
+  margin-bottom: 3%;
+  text-align: center;
+  justify-content: right;
+  width: 100px;
+}
+input{
+  width:200px;
+  height:30px
+}

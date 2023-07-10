@@ -1,0 +1,119 @@
+
+/*Main content css*/
+#main{
+  width: 75%;
+  height: 100vh;
+  margin-top: 18vh;
+  margin-right: 3.7vh;
+  height: auto;
+  position: relative;
+  float: right;
+  border-radius: 8px;
+}
+.top{
+  top:50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: 270px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+}
+label{
+
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    margin-right:15px;
+    float:left;
+}
+input{
+  width: 200px;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: #CFCFCF;
+}
+select{
+    width: 200px;
+    padding-left: 10px;
+    line-height: 40px;
+    border-style: solid;
+    border-color: #CFCFCF;
+}
+select:focus{
+  outline-color: #FFB703;
+}
+input:focus{
+  outline-color: #FFB703;
+}
+.form{
+  margin-top: 20px;
+}
+.bottom{
+  top:50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: 500px;
+  padding: 20px;
+  background-color: white;
+  overflow: auto;
+  box-shadow: 2px 5px 9px -5px rgba(112,112,115,0.79);
+}
+th{
+  padding: 15px;
+  font-size: medium;
+}
+
+.bottom button{
+  margin: 0;
+  margin-left: 85%;
+  margin-bottom: 3%;
+  text-align: center;
+  justify-content: right;
+  width: 100px;
+}
+.tb-data{
+  border: solid rgb(225, 223, 223);
+  text-align: center;
+}
+.tb-data td{
+  height: 30px;
+  border: solid rgb(225, 223, 223);
+  border-width: 1px;
+  border-top-width: 0px;
+}
+.tb-data th{
+  background-color: rgb(255, 177, 61);
+  border: solid rgb(225, 223, 223);
+  border-width: 1px;
+}
+.tb-data tr:nth-child(even){
+  background-color: rgb(199, 199, 199);
+}
+.return{
+  text-decoration: none;
+}
+
+
+
+/**responsib*/
+@media screen and (max-width: 1100px){
+  #main{
+    width: 95%;
+    float:left;
+    margin-left:3.7vh ;
+    margin-right: 3.7vh;
+  }
+  .bottom{
+    overflow: auto;
+  }
+  .top{
+    overflow: auto;
+  }
+}

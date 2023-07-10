@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./css/dashboard.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/5084fa024d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header-->
+  <div class="header">
+    <table>
+      <tr height="80px">
+        <td width="25%" style="padding: 0 !important;">
+          <img src="./img/Logo2.png" alt="logo" width="30%">
+        </td>
+        <td width="75%" style="color: white; font-size: larger;">
+          <H4><i class="fa-solid fa-house-chimney"></i>Dashboard</H4>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!--Sidebar-->
+<!--PAKE PHP BUAT AMBIL DATA-->
+  <div class="header stack-header">
+    <!-- <div class="ava-name">
+      <div class="image">
+        <img src="/img/cat.png" width="60%" alt="">
+      </div>
+      <div class="name">
+        <p>My Name is Hidden <span><b>Administrator</b></span></p>
+        
+      </div>
+    </div> -->
+    <button onclick="location.href='dashboard.html'"><i class="fa-solid fa-house-chimney"></i>Dashboard</button>
+    <button onclick="location.href='databarang.html'"><i class="fa-solid fa-box"></i>Data Barang</button>
+    <button onclick="location.href='pinjaman.html'"><i class="fa-solid fa-box-open"></i>Data Peminjaman</button>
+    <button onclick="myfunction()" class="dropdwon">Transaksi</button>
+    <div id="dpbtn" class="dropdown">
+      <a href="barangmasuk.html">Barang Masuk</a>
+      <a href="barangkeluar.html">Barang Keluar</a>
+    </div>
+  </div>
+
+  <!--tampilan data konten tengah-->
+  <div id="main" class="ha">
+    <!--ATAS-->
+    <div class="ha top">
+      <table width="100%" class="tabel-top">
+        <tr>
+          <td width="33%">
+            <span><img src="./img/box.png" alt=""> Data Barang</span>
+          </td>
+          <td width="35%">
+            <span><img src="./img/direct-inbox.png" alt=""> Data Barang Masuk</span>
+          </td>
+          <td>
+            <span><img src="./img/direct-send.png" alt=""> Data Barang Keluar</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--TENGAH-->
+    <div class="ha middle">
+      <div class="con barang">
+        <span> <img src="./img/Group 26.png" alt=""><Span>Data Jenis Barang</Span></span>
+      </div>
+      <div class="con data ">
+        <span><img src="./img/Group 27.png" alt=""><Span>Data Satuan</Span></span>
+      </div>
+      <div class="con user">
+        <span><img src="./img/Group 29.png" alt=""><Span>Data User</Span></span>
+      </div>
+    </div>
+
+
+  <!--Tabel/welcome-->
+    <div class="ha bottom">
+      <Table width="100%"class="tb-data">
+        <tr>
+          <TH>No</TH>
+          <TH>ID</TH>
+          <TH>Nama Barang</TH>
+          <TH>Jenis Barang</TH>
+          <TH>Stok</TH>
+          <TH></TH>
+          <!--PAKE PHP BUAT AMBIL DATA BARANG, CONTOHNYA PAKE INDEX PRAKTIKUM-->
+        </tr>
+      </Table>
+  </div>
+
+
+
+  <script>
+    function myfunction(){
+      document.getElementById("dpbtn").classList.toggle("show")
+    }
+  </script>
+</body>
+</html>
